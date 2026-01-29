@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science Student | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #001219;
+            color: #e9d8a6;
+            scroll-behavior: smooth;
+        }
+        /* Code Rain Background Effect */
+        #bg-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            opacity: 0.15; /* Keeps code from distracting from text */
+        }
+        .ocean-gradient {
+            background: linear-gradient(180deg, rgba(0,18,25,0.8) 0%, rgba(0,95,115,0.8) 100%);
+        }
+        .card {
+            background: rgba(10, 147, 150, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(148, 210, 189, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #94d2bd;
+        }
+    </style>
+</head>
+<body class="font-sans">
+
+    <canvas id="bg-canvas"></canvas>
+
+    <nav class="sticky top-0 z-50 p-4 bg-[#001219]/90 border-b border-cyan-900">
+        <div class="max-w-5xl mx-auto flex justify-between items-center">
+            <h1 class="text-cyan-400 font-mono font-bold uppercase tracking-widest">CS_STUDENT.SYS</h1>
+            <div class="space-x-6 text-sm">
+                <a href="#about" class="hover:text-cyan-400">ABOUT</a>
+                <a href="#projects" class="hover:text-cyan-400">PROJECTS</a>
+                <a href="#contact" class="hover:text-cyan-400">CONTACT</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto px-6 py-12">
+        
+        <header class="text-center mb-24">
+            <h2 class="text-5xl md:text-7xl font-bold text-white mb-4">Computer Science Student</h2>
+            <p class="text-cyan-400 font-mono">14yo Engineer • Emerald High • Top 30 US Kung Fu</p>
+        </header>
+
+        <section id="about" class="mb-20">
+            <div class="flex items-center gap-2 mb-6">
+                <div class="h-[1px] w-12 bg-cyan-500"></div>
+                <h3 class="text-cyan-400 font-mono text-xl">System Profile</h3>
+            </div>
+            <p class="text-lg leading-relaxed mb-6">
+                I am a student at Emerald High School with a lifelong fascination for the mechanics of technology. My ultimate career goal is to become an <strong>Electrical Engineer</strong>, specializing in the intersection of AI, hardware, robotics, and software.
+            </p>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="card p-4 rounded">
+                    <h4 class="text-cyan-300 font-bold mb-2"><i class="fas fa-book-open mr-2"></i>Current Academics</h4>
+                    <ul class="text-sm space-y-1 text-gray-300">
+                        <li>• CS Essentials & Adv. Algebra 2</li>
+                        <li>• Biology & English 1</li>
+                        <li>• Contemporary Health & Freshman PE</li>
+                    </ul>
+                </div>
+                <div class="card p-4 rounded">
+                    <h4 class="text-cyan-300 font-bold mb-2"><i class="fas fa-brain mr-2"></i>Methodology</h4>
+                    <p class="text-sm text-gray-300">Methodical problem-solving, breaking complex challenges into organized, manageable segments with total independence.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="mb-20">
+            <div class="flex items-center gap-2 mb-8">
+                <div class="h-[1px] w-12 bg-cyan-500"></div>
+                <h3 class="text-cyan-400 font-mono text-xl">Technical Projects</h3>
+            </div>
+            
+            <div class="grid gap-6">
+                <a href="https://drive.google.com/file/d/1cJBKkoK8nq_7AcQVoKKnjccX3XdEYa-V/view?usp=sharing" target="_blank" class="card p-6 rounded-lg group">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h4 class="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors">Fire Escape Game</h4>
+                            <p class="text-gray-400 mt-2">Educational simulation training students and teachers on emergency protocols.</p>
+                        </div>
+                        <i class="fas fa-external-link-alt text-cyan-600"></i>
+                    </div>
+                </a>
+
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="card p-5 rounded">
+                        <h5 class="font-bold text-white">Minigame Randomizer</h5>
+                        <p class="text-sm text-gray-400 mt-1">Logic-based game hub featuring three distinct modes.</p>
+                    </div>
+                    <div class="card p-5 rounded">
+                        <h5 class="font-bold text-white">Pizza Value Calculator</h5>
+                        <p class="text-sm text-gray-400 mt-1">Calculates price efficiency per slice and square inch.</p>
+                    </div>
+                    <div class="card p-5 rounded">
+                        <h5 class="font-bold text-white">Prompt Survey App</h5>
+                        <p class="text-sm text-gray-400 mt-1">Data-entry application capturing and saving user responses.</p>
+                    </div>
+                    <div class="card p-5 rounded">
+                        <h5 class="font-bold text-white">Professional Portfolio</h5>
+                        <p class="text-sm text-gray-400 mt-1">Digital showcase of academic and technical milestones.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8 text-center">
+                <div class="p-8 border-2 border-dashed border-cyan-900 rounded-xl bg-cyan-950/20">
+                    <i class="fas fa-film text-4xl text-cyan-500 mb-4"></i>
+                    <h4 class="text-lg font-bold mb-2">Project Demonstration</h4>
+                    <p class="text-sm text-gray-400 mb-6">Click below to view the Fire Escape Game gameplay video.</p>
+                    <a href="https://drive.google.com/file/d/1cJBKkoK8nq_7AcQVoKKnjccX3XdEYa-V/view?usp=sharing" target="_blank" class="bg-cyan-600 hover:bg-cyan-500 text-white px-8 py-3 rounded-full font-bold transition-all">
+                        Watch on Google Drive
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-20">
+            <div class="flex items-center gap-2 mb-6">
+                <div class="h-[1px] w-12 bg-cyan-500"></div>
+                <h3 class="text-cyan-400 font-mono text-xl">Discipline</h3>
+            </div>
+            <div class="card p-8 rounded-xl bg-gradient-to-r from-[#005f73]/20 to-transparent">
+                <p class="italic text-lg text-gray-200">
+                    "Ranked in the <strong>Top 30 in the US for Kung Fu</strong>, I apply the same precision and composure to debugging code as I do to performing for the mayor."
+                </p>
+            </div>
+        </section>
+
+        <section id="contact" class="mb-20">
+            <div class="flex items-center gap-2 mb-6">
+                <div class="h-[1px] w-12 bg-cyan-500"></div>
+                <h3 class="text-cyan-400 font-mono text-xl">Contact Me</h3>
+            </div>
+            <div class="card p-8 rounded-xl">
+                <form action="https://formsubmit.co/chuangal0509@gmail.com" method="POST" class="space-y-4">
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <input type="text" name="name" placeholder="Your Name" required class="bg-[#001219] border border-cyan-900 p-3 rounded focus:outline-none focus:border-cyan-400">
+                        <input type="email" name="email" placeholder="Your Email" required class="bg-[#001219] border border-cyan-900 p-3 rounded focus:outline-none focus:border-cyan-400">
+                    </div>
+                    <textarea name="message" placeholder="Project Inquiries or Questions..." rows="4" required class="w-full bg-[#001219] border border-cyan-900 p-3 rounded focus:outline-none focus:border-cyan-400"></textarea>
+                    <button type="submit" class="w-full bg-cyan-600 hover:bg-cyan-500 text-white font-bold py-3 rounded transition-colors uppercase tracking-widest text-sm">Send Transmission</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="p-8 text-center text-xs text-cyan-900 font-mono uppercase">
+        &copy; 2024 Computer Science Student // Built for Engineering Excellence
+    </footer>
+
+    <script>
+        const canvas = document.getElementById('bg-canvas');
+        const ctx = canvas.getContext('2d');
+
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        const code = "01ABCDEFGHIJKLMNOPQRSTUVWXYZ<>[]{}/+*%$#@!&";
+        const fontSize = 16;
+        const columns = canvas.width / fontSize;
+
+        const drops = [];
+        for (let x = 0; x < columns; x++) {
+            drops[x] = 1;
+        }
+
+        function draw() {
+            ctx.fillStyle = 'rgba(0, 18, 25, 0.05)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            ctx.fillStyle = '#0a9396'; // Ocean blue/green color
+            ctx.font = fontSize + 'px monospace';
+
+            for (let i = 0; i < drops.length; i++) {
+                const text = code.charAt(Math.floor(Math.random() * code.length));
+                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+
+                if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                    drops[i] = 0;
+                }
+                drops[i]++;
+            }
+        }
+
+        setInterval(draw, 33);
+
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+    </script>
+</body>
+</html>
